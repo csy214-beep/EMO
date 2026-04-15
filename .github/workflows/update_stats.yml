@@ -1,0 +1,41 @@
+name: Update Folder Statistics
+
+on:
+  push:
+    branches: [master] # 根据实际默认分支调整
+  workflow_dispatch: # 允许手动触发
+
+# 取消同一分支上正在进行的旧运行
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write # 允许推送修改
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run statistics script
+        run: python scripts/update_stats.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update folder statistics [skip ci]"
+            git push
+          fi
