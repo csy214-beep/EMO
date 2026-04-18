@@ -5,7 +5,7 @@ import os
 import re
 from pathlib import Path
 
-EMO_DIR = Path("EMO")
+EMO_DIR = Path("emo")
 README_PATH = Path("README.md")
 START_MARK = "<!-- stats_start -->"
 END_MARK = "<!-- stats_end -->"
