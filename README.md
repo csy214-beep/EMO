@@ -22,7 +22,7 @@
 
 ## Infor
 <!-- stats_start -->
-**Total: 928 files**
+**Total: 929 files**
 
 <details>
 <summary>Click to expand folder statistics</summary>
@@ -33,7 +33,7 @@
 | Pochi (11) | Rokkā (3) | Shirley (26) | TomAndJerry (10) | UseCautiously (1) |
 | ai (14) | broifall (6) | card (4) | cat (29) | dog (11) |
 | dora (87) | duck (3) | fakeHuman (20) | fakeJoke (4) | games (2) |
-| haku (27) | honorOfKing (12) | http (21) | lovely (62) | lu (16) |
+| haku (27) | honorOfKing (12) | http (21) | lovely (63) | lu (16) |
 | manosaba_Emma (20) | manosaba_Shirley (24) | mi2 (94) | mid_pic_ym (9) | mujika (47) |
 | other (86) | programing (24) | sbti (27) | stardust (8) | text (42) |
 | win11_tan (17) | 超かぐや姫！ (9) |  |  |  |
