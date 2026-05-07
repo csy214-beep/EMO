@@ -40,3 +40,10 @@
 
 </details>
 <!-- stats_end -->
+
+## Acknowledge
+
+All emoticons in this repository are sourced from the internet.  
+They are intended **only for personal learning and communication**, not for commercial use.
+
+If you are the copyright owner of any material and believe it should not be included here, please contact me via [GitHub Issues](https://github.com/csy214-beep/EMO/issues) and I will remove it promptly.
