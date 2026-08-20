@@ -22,7 +22,7 @@
 
 ## Infor
 <!-- stats_start -->
-**Total: 1060 files**
+**Total: 1066 files**
 
 <details>
 <summary>Click to expand folder statistics</summary>
@@ -30,11 +30,11 @@
 |  |  |  |  |  |
 |---|---|---|---|---|
 | Erina (29) | MiDramatic (15) | Milltina (16) | Pandas (88) | Penguin (13) |
-| Pochi (12) | Rokkā (3) | Shirley (27) | TomAndJerry (13) | UseCautiously (4) |
+| Pochi (12) | Rokkā (3) | Shirley (27) | TomAndJerry (13) | UseCautiously (5) |
 | ai (18) | broifall (6) | card (4) | cat (34) | classicyellowemoji (11) |
-| dog (12) | dora (94) | duck (3) | fakeHuman (23) | fakeJoke (5) |
-| games (2) | haku (27) | honorOfKing (12) | http (21) | lovely (82) |
-| lu (16) | manosaba_Emma (20) | manosaba_Shirley (24) | mi2 (111) | mid_pic_ym (9) |
+| dog (12) | dora (94) | duck (3) | fakeHuman (24) | fakeJoke (7) |
+| games (2) | haku (27) | honorOfKing (12) | http (21) | lovely (83) |
+| lu (16) | manosaba_Emma (20) | manosaba_Shirley (24) | mi2 (112) | mid_pic_ym (9) |
 | mujika (58) | other (103) | programing (34) | sbti (27) | stardust (8) |
 | text (50) | win11_tan (17) | 超かぐや姫！ (9) |  |  |
 
