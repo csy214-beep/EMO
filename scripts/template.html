@@ -22,6 +22,7 @@
     <!-- Favicon – 😂 emoji as SVG -->
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='50' text-anchor='middle' dominant-baseline='central' font-size='80'>😂</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -31,10 +32,34 @@
 
         body {
             display: flex;
+            flex-direction: column;
             height: 100vh;
             font-family: 'Segoe UI', system-ui, sans-serif;
             background: #f9fafb;
             color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 56px;
+            padding: 0 20px;
+            flex-shrink: 0;
+            background: #fff;
+            border-bottom: 1px solid #e5e7eb;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar-title {
+            font-size: 1.3rem;
+            color: #111827;
+        }
+
+        .layout {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
         }
 
         nav {
@@ -42,20 +67,22 @@
             background: #fff;
             border-right: 1px solid #e5e7eb;
             overflow-y: auto;
-            padding: 16px 0;
+            padding: 8px 0;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
             flex-shrink: 0;
         }
 
-        nav h2 {
-            font-size: 1.3rem;
-            padding: 0 20px 16px;
-            border-bottom: 1px solid #e5e7eb;
-            margin-bottom: 8px;
-            color: #111827;
-            display: flex;
+        .github-link {
+            display: inline-flex;
             align-items: center;
-            gap: 8px;
+            color: #374151;
+            text-decoration: none;
+            font-size: 1.3rem;
+            transition: color 0.2s;
+        }
+
+        .github-link:hover {
+            color: #111827;
         }
 
         nav ul {
@@ -148,7 +175,7 @@
         }
 
         @media (max-width: 768px) {
-            body {
+            .layout {
                 flex-direction: column;
             }
 
@@ -164,18 +191,26 @@
 </head>
 
 <body>
-    <nav>
-        <h2>Emo表情包</h2>
-        <ul id="nav-list"></ul>
-    </nav>
-    <main>
-        <div id="category-title" class="category-title"></div>
-        <div id="gallery-container">
-            <div class="placeholder" id="placeholder">
-                <span>选择左侧分类查看表情</span>
+    <header class="navbar">
+        <h2 class="navbar-title">Emo Stickers</h2>
+        <a href="https://github.com/igugyj/EMO" target="_blank" rel="noopener noreferrer" class="github-link"
+            title="GitHub 仓库" aria-label="GitHub 仓库">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </header>
+    <div class="layout">
+        <nav>
+            <ul id="nav-list"></ul>
+        </nav>
+        <main>
+            <div id="category-title" class="category-title"></div>
+            <div id="gallery-container">
+                <div class="placeholder" id="placeholder">
+                    <span>选择左侧分类查看表情</span>
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
     <script>
         const categories = {{ DATA }};
 
